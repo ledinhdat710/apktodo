@@ -1,39 +1,53 @@
-# Shopping Store
+Setup
+Make sure to install the dependencies:
+# npm
+npm install
 
-An online shopping store built with Vue.js 3 using the composition API.
+# pnpm
+pnpm install
 
-It features a clean user interface with functionalities like product listings page, detailed product pages, a cart system, and a checkout process.
+# yarn
+yarn install
 
-[![Website Preview](./preview.png?raw=true)](https://shopping-store-vue.netlify.app)
+# bun
+bun install
 
-## Technologies Used
+Development Server
+Start the development server on http://localhost:3000:
+# npm
+npm run dev
 
-- Vue.js 3 (with Composition API)
-- Tailwind CSS with DaisyUI
-- TypeScript
-- Pinia for state management
-- [DummyJSON](https://dummyjson.com/) - Dummy REST API for fetching products data
+# pnpm
+pnpm run dev
 
-## Setup Instructions
+# yarn
+yarn dev
 
-1. Clone the repository:
+# bun
+bun run dev
 
-    ```sh
-    git clone https://github.com/abbassiddiqi/shopping-store-vue.git
-    ```
+Production
+Build the application for production:
+# npm
+npm run build
 
-2. Install dependencies:
+# pnpm
+pnpm run build
 
-    ```sh
-    cd shopping-store-vue
-    npm install
-    ```
+# yarn
+yarn build
 
-3. Run the development server:
+# bun
+bun run build
+Locally preview production build:
+# npm
+npm run preview
 
-    ```sh
-    npm run dev
-    ```
+# pnpm
+pnpm run preview
 
-## License
-This project is licensed under the [MIT License](https://github.com/abbassiddiqi/shopping-store-vue/blob/master/LICENSE).
+# yarn
+yarn preview
+
+# bun
+bun run preview
