@@ -35,20 +35,20 @@ watchDebounced(searchInput, async () => {
     <div class="text-sm breadcrumbs mb-6">
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
-        <li>Products</li>
+        <li>Games</li>
       </ul>
     </div>
     
-    <input type="text" v-model="searchInput" placeholder="Search products..." class="input input-bordered mb-4 w-full max-w-md" />
+    <input type="text" v-model="searchInput" placeholder="Search games..." class="input input-bordered mb-4 w-full max-w-md" />
 
     <div class="flex justify-center p-8" v-if="isLoading"><span class="loading loading-spinner loading-lg"></span></div>
     
     <div class="text-center p-8" v-if="!isLoading && !products.length">
-      <div>No products found.</div>
+      <div>No games found.</div>
       <div class="text-gray-600 text-sm mt-4">Try searching for something else.</div>
     </div>
     
-    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3" v-if="!isLoading && products.length">
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-5" v-if="!isLoading && products.length">
       <ProductCard v-for="product in products" :key="product.id" :product="product" />
     </div>
     

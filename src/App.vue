@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import NavbarHeader from './components/NavbarHeader.vue';
+import FooterHeader from './components/FooterHeader.vue';
 </script>
 
 <template>
@@ -11,6 +12,8 @@ import NavbarHeader from './components/NavbarHeader.vue';
     <div class="flex-grow">
       <RouterView />
     </div>
+
+    <FooterHeader/>
   </div>
 
 </template>

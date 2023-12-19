@@ -65,8 +65,8 @@ const handleDecrement = () => {
     <div class="text-sm breadcrumbs mb-6">
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/">Products</RouterLink></li>
-        <li>Product Detail</li>
+        <li><RouterLink to="/">Games</RouterLink></li>
+        <li>{{ product?.title }}</li>
       </ul>
     </div>
 
